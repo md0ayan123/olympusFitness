@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Olympus Fitness Gym</title>
+    <link rel="stylesheet" href="../css/add_expense.css">
+</head>
+<body class="add-expense-body">
+    <img src="../images/gym_background_image.jpg" alt="Gym Image" class="bg-image">
+    <div class="add-expense-container">
+        <div class="header">
+            <h1 class="add-expense-title">Add Expense</h1>
+        </div>
+        <form id="addExpenseForm" class="add-expense-form" autocomplete="off">
+            <div class="filter-left">
+                <label for="yearSelect" class="filter-label">Select Year:</label>
+                <select id="yearSelect" class="filter-input"></select>
+                <label for="monthSelect" class="filter-label">Select Month:</label>
+                <select id="monthSelect" class="filter-input"></select>
+            </div>
+            
+            <div class="form-group">
+                <label for="trainerSalary" class="form-label">Trainer Salary:</label>
+                <input type="text" id="trainerSalary" name ="trainersalary123" class="form-input" placeholder="Enter amount" oninput="validateInput(this); updateTotalExpense();" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="electricityBill" class="form-label">Electricity Bill:</label>
+                <input type="text" id="electricityBill" name="electricityBill1234" class="form-input" placeholder="Enter amount" oninput="validateInput(this); updateTotalExpense();" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="miscellaneous" class="form-label">Miscellaneous Expense:</label>
+                <input type="text" id="miscellaneous" name="miscellaneous5678" class="form-input" placeholder="Enter amount" oninput="validateInput(this); updateTotalExpense();" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="otherExpenses" class="form-label">Other Expenses:</label>
+                <input type="text" id="otherExpenses" name="otherExpenses91011" class="form-input" placeholder="Enter amount" oninput="validateInput(this); updateTotalExpense();" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="totalExpense" class="form-label">Total Expense:</label>
+                <input type="text" id="totalExpense" class="form-input" value="" readonly autocomplete="off">
+            </div>
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+    <script src="../js/addExpense.js"></script>
+</body>
+</html>

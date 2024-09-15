@@ -1,0 +1,68 @@
+.add-trainer-body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/gym_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+.add-trainer-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.add-trainer-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.add-trainer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.form-button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.form-button:hover {
+    background-color: #ff1a1a;
+}

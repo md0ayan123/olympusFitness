@@ -1,0 +1,45 @@
+.trainer-profile-body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/gym_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+.trainer-profile-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trainer-profile-title, .assigned-classes-title, .pt-sessions-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.trainer-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.trainer-info p {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

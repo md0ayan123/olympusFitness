@@ -1,0 +1,85 @@
+/* General styles for view members page */
+.view-members-body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/gym_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+.view-members-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.view-members-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-size: 1.2em;
+}
+
+.filter-input {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.filter-button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-button:hover {
+    background-color: #ff1a1a;
+}
+
+.members-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.members-table th, 
+.members-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.members-table th {
+    background-color: #f2f2f2;
+}
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: red;
+    font-weight: bold;
+}

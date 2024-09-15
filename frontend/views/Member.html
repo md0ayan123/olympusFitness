@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships - Olympus Fitness Gym</title>
+    <link rel="stylesheet" href="../css/renewals.css">
+</head>
+<body class="renewals-body">
+    <div class="renewals-container">
+        
+        <h1 class="renewals-title">Members</h1>
+        <div class="filter-container">
+            <div class="filter-left">
+                <label for="yearSelect" class="filter-label">Select Year:</label>
+                <select id="yearSelect" class="filter-input"></select>
+                <label for="monthSelect" class="filter-label">Select Month:</label>
+                <select id="monthSelect" class="filter-input"></select>
+                <label for="monthSelect" class="filter-label">Select Membership Type:</label>
+                <select id="membershipType" class="filter-input"></select>
+            </div>
+            <div class="filter-right">
+                <span id="rowCount" class="row-count">Rows: 0</span>
+            </div>
+        </div>
+        <table id="renewalsTable" class="renewals-table">
+            <thead>
+                <tr>
+                    <th>Member ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Membership Type</th>
+                    <th>Package Value</th>
+                    <th>Amount Paid</th>
+                    <th>Outstanding Amount</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Inactive members will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/renewals.js"></script>
+</body>
+</html>

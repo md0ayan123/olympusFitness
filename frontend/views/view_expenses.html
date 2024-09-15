@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses - Olympus Fitness Gym</title>
+    <link rel="stylesheet" href="../css/view_expense.css">
+</head>
+<body class="view-expense-body">
+    <img src="../images/gym_background_image.jpg" alt="Gym Image" class="bg-image">
+    <div class="view-expense-container">
+        <div class="header">
+            <h1 class="view-expense-title">View Expenses</h1>
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <button class="dropbtn" id="selectedMonth">Select Month</button>
+                    <div class="dropdown-content" id="monthDropdown">
+                        <a href="#" onclick="selectMonth('All')">All</a>
+                        <a href="#" onclick="selectMonth('January')">January</a>
+                        <a href="#" onclick="selectMonth('February')">February</a>
+                        <a href="#" onclick="selectMonth('March')">March</a>
+                        <a href="#" onclick="selectMonth('April')">April</a>
+                        <a href="#" onclick="selectMonth('May')">May</a>
+                        <a href="#" onclick="selectMonth('June')">June</a>
+                        <a href="#" onclick="selectMonth('July')">July</a>
+                        <a href="#" onclick="selectMonth('August')">August</a>
+                        <a href="#" onclick="selectMonth('September')">September</a>
+                        <a href="#" onclick="selectMonth('October')">October</a>
+                        <a href="#" onclick="selectMonth('November')">November</a>
+                        <a href="#" onclick="selectMonth('December')">December</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="selectedYear">Select Year</button>
+                    <div class="dropdown-content" id="yearDropdown">
+                        <a href="#" onclick="selectYear('2024')">2024</a>
+                        <a href="#" onclick="selectYear('2025')">2025</a>
+                        <a href="#" onclick="selectYear('2026')">2026</a>
+                        <a href="#" onclick="selectYear('2027')">2027</a>
+                        <a href="#" onclick="selectYear('2028')">2028</a>
+                        <a href="#" onclick="selectYear('2029')">2029</a>
+                        <a href="#" onclick="selectYear('2030')">2030</a>
+                        <a href="#" onclick="selectYear('2031')">2031</a>
+                        <a href="#" onclick="selectYear('2032')">2032</a>
+                        <a href="#" onclick="selectYear('2033')">2033</a>
+                        <a href="#" onclick="selectYear('2034')">2034</a>
+                        <a href="#" onclick="selectYear('2035')">2035</a>
+                        <a href="#" onclick="selectYear('2036')">2036</a>
+                        <a href="#" onclick="selectYear('2037')">2037</a>
+                        <a href="#" onclick="selectYear('2038')">2038</a>
+                        <a href="#" onclick="selectYear('2039')">2039</a>
+                        <a href="#" onclick="selectYear('2040')">2040</a>
+                        <a href="#" onclick="selectYear('2041')">2041</a>
+                        <a href="#" onclick="selectYear('2042')">2042</a>
+                        <a href="#" onclick="selectYear('2043')">2043</a>
+                        <a href="#" onclick="selectYear('2044')">2044</a>
+                    </div>
+                </div>
+            </div>
+            <button class="download-button" onclick="downloadExpenses()">Download as XLS</button>
+        </div>
+        <table class="expense-table">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Year</th>
+                    <th>Trainer Salary</th>
+                    <th>Electricity Bill</th>
+                    <th>Miscellaneous</th>
+                    <th>Other Expenses</th>
+                    <th>Total Expense</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/viewExpense.js"></script>
+</body>
+</html>

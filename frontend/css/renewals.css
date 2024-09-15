@@ -1,0 +1,110 @@
+/* General styles with standard text size */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('../images/gym_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.renewals-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.renewals-title {
+    font-size: 2.5em; /* Adjusted title size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e50914;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-size: 1.2em; /* Standard label text size */
+    color: #ffffff;
+}
+
+.filter-input {
+    font-size: 1em; /* Standard input text size */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444444;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.row-count {
+    font-size: 1.2em; /* Standard row count text size */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.renewals-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.renewals-table th, 
+.renewals-table td {
+    padding: 15px; /* Standard padding */
+    text-align: left;
+    border-bottom: 1px solid #555555;
+    font-size: 1.2em; /* Standard table text size */
+}
+
+.renewals-table th {
+    background-color: #444444;
+}
+
+.d-none{
+    display: none;
+}
+
+.active-button {
+    background-color: #444444;
+    color: rgb(0, 189, 41);
+    border: none;
+    padding: 10px 20px; /* Standard button size */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em; /* Standard button text size */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.renew-button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Standard button size */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em; /* Standard button text size */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.renew-button:hover {
+    background-color: #b20710;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Members - Olympus Fitness Gym</title>
+    <link rel="stylesheet" href="../css/view_members.css">
+</head>
+<body class="view-members-body">
+    <div class="view-members-container">
+        <h1 class="view-members-title">View Members</h1>
+        <div class="filter-container">
+            <label for="yearSelect" class="filter-label">Select Year:</label>
+            <select id="yearSelect" class="filter-input">
+                <!-- Years will be populated by JavaScript -->
+            </select>
+            <button id="downloadButton" class="filter-button">Download XLS</button>
+        </div>
+        <table id="membersTable" class="members-table">
+            <thead>
+                <tr>
+                    <th>Member ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Membership Type</th>
+                    <th>Amount</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Member rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/viewMembers.js"></script>
+</body>
+</html>

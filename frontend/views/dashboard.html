@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Olympus Fitness Gym</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+    <img src="../images/gym_background_image.jpg" alt="Gym Image" class="bg-image">
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li>
+                <a href="#">Members</a>
+                <ul>
+                    <li><a href="add_member.html">Add Member</a></li>
+                    <li><a href="view_members.html">View Members</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Trainers</a>
+                <ul>
+                    <li><a href="addTrainer.html">Add Trainer</a></li>
+                    <li><a href="view_trainer.html">View Trainers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Expenses</a>
+                <ul>
+                    <li><a href="add_expense.html">Add Expense</a></li>
+                    <li><a href="view_expenses.html">View Expenses</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </nav>
+    <div class="dashboard-container">
+        <div class="card">
+            <h3>Total Members</h3>
+            <p id="total-members">0</p>
+        </div>
+        <div class="card">
+            <h3>Total Trainers</h3>
+            <p id="total-trainers">0</p>
+        </div>
+        <div class="card">
+            <h3>Total Expenses</h3>
+            <p id="total-expenses">0</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="membershipTypeChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="activeInactiveChart"></canvas>
+        </div>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

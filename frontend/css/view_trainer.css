@@ -1,0 +1,54 @@
+/* General styles for trainer list page */
+.trainer-list-body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/gym_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+}
+
+.trainer-list-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.trainer-list-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.trainer-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.trainer-table th, .trainer-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trainer-table th {
+    background-color: #f2f2f2;
+}
+
+.total-salary-label {
+    text-align: right;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.total-salary-amount {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}

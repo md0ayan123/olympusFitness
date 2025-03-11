@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     memberIdInput.addEventListener('change', function() {
         const memberId = memberIdInput.value.trim();
         if (memberId && members[memberId]) {
-            const member = members[memberId];
+            const member = member[memberId];
             nameInput.value = member.name;
             phoneInput.value = member.phone;
             addressInput.value = member.address;
@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nameInput.value = '';
             phoneInput.value = '';
             addressInput.value = '';
+            
         }
     });
 
@@ -162,7 +163,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error:', error);
             alert('Error adding expense. Please try again.');
         });
-
+          console.log("running");
+          
         // Add or update member in the database
         // location.reload(); // Refresh the page after showing the alert
     });

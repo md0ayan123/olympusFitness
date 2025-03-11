@@ -8,9 +8,10 @@ const path = require('path')
 
 app.use(express.json());
 app.use(cors());
-app.use('/api/expense', expenseRoutes);
-app.use('/api/user', userRoutes);
+app.use('/api/expenses', expenseRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/member', memberRoutes);
+
 
 // app.get('/',(req,res)=>{
 //     res.sendFile(path.join(__dirname,"../frontend","views","login.html"))

@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const members = [
         // Example member data, this should be fetched from the database in a real application
-        { memberId: '12345', name: 'John Doe', phone: '1234567890', address: '123 Main St', membershipType: 'Monthly', amount: 1500, startDate: '2023-01-01', endDate: '2023-01-31' },
-        { memberId: '67890', name: 'Jane Smith', phone: '0987654321', address: '456 Oak St', membershipType: 'Quarterly', amount: 3700, startDate: '2023-03-01', endDate: '2023-05-31' }
+        // { memberId: '12345', name: 'John Doe', phone: '1234567890', address: '123 Main St', membershipType: 'Monthly', amount: 1500, startDate: '2023-01-01', endDate: '2023-01-31' },
+        // { memberId: '67890', name: 'Jane Smith', phone: '0987654321', address: '456 Oak St', membershipType: 'Quarterly', amount: 3700, startDate: '2023-03-01', endDate: '2023-05-31' }
     ];
 
     function populateYears() {
@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${member.address}</td>
                 <td>${member.membershipType}</td>
                 <td>${member.amount}</td>
-                <td>${member.startDate}</td>
-                <td>${member.endDate}</td>
-                <td class="${status === 'Active' ? 'status-active' : 'status-inactive'}">${status}</td>
-            `;
+          
+                <td class="${status === 'Active' ? 'status-active' : 'status-inactive' }">${status}</td>
+             
+            
+                 `  ;
             membersTableBody.appendChild(row);
+           
         });
     }
 

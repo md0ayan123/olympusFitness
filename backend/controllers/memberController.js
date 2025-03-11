@@ -7,6 +7,7 @@ const {createMember,getAllMember,getMemberById,updateMember,deleteMember} = requ
 module.exports = ({
     createMembers:async (req, res) => {
         console.log(req.body)
+
             let data = await createMember(req.body) 
                 if (!data) {
                     res.json({
@@ -54,21 +55,44 @@ module.exports = ({
     },
     
     updateMembers: async (req, res) => {
-        let user = await updateMember(req.body)
-            
-            if (!user) {
-                res.json({
-                    success: false,
-                    msg: "no records found"
-                })
-            } else {
-                user =JSON.parse(JSON.stringify(user))
-                delete user.password
-                res.json({
-                    success: true,
-                    result: user
-                })
+        try {
+            console.log("Received Data:", req.body);
+            if (!req.body.subscriptionData) {
+                return res.status(400).json({ success: false, msg: "Missing subscription data" });
             }
+            let user = await updateMember(req.body)
+            console.log(user)
+            if (!user) {
+                return res.json({ success: false, msg: "No records found" });
+            }
+            user = JSON.parse(JSON.stringify(user));
+            delete user.password;
+
+            return res.json({ success: true, result: user });
+    
+        } catch (error) {
+            console.error("Error updating member:", error);
+            return res.status(500).json({ success: false, msg: "Server error" });
+            
+        }
+        // "subscriptionData.1"req.subscriptionData}
+        
+        // console.log(req.body.subscriptionData)
+            
+            // if (!user) {
+            //     res.json({
+            //         success: false,
+            //         msg: "no records found"
+            //     })
+            // } 
+            // else {
+            //     user =JSON.parse(JSON.stringify(user))
+            //     delete user.password
+            //     res.json({
+            //         success: true,
+            //         result: user
+            //     })
+            // }
     },
     deleteMembers: async (req, res) => {
         try{
